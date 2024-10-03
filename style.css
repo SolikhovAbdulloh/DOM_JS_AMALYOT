@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: burlywood;
+}
+
+.contiener div{
+     width: 200px;
+    height: 200px;
+    border: 1px solid rgb(4, 0, 0);
+    border-radius: 100%;
+    background-color: rgb(112, 112, 112);
+    z-index: 999; 
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    color:rgb(0, 209, 63);
+    margin-top: 50px;
+    
+}
+.contiener div:hover{
+    transform: rotate(380deg);
+    transition: 3s;
+    
+}
+
+.contiener{
+    padding: 20px 40px;
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+     
+}

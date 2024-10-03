@@ -1,0 +1,11 @@
+//inline event bu - tag oziga inline tarzida bajariladi ,lekin kamroq moslashuvchan 
+
+// <button.onclick="alert('start bosildi')">Start<\button>
+
+//Dom xususiyati orqali : Faqat bitta event handler ulash mumkin.
+
+// selector.onclick = fuction(){} anonim fuction orqali qilsak boladi 
+
+//addEventListener Eng zamonaviy va moslashuvchan  usul bolib, bir nechta hodisa qayta ishlovchilar biriktirish imkonini beradi 
+
+//selector.addEventListener.("click ..keypress va ..hokazo",fuction(){}) qoshamiz 
