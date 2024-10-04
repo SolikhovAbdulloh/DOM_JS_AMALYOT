@@ -10,20 +10,21 @@
     height: 200px;
     border: 1px solid rgb(4, 0, 0);
     border-radius: 100%;
-    background-color: rgb(112, 112, 112);
-    z-index: 999; 
+    background-color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 50px rgb(18, 168, 195);
+
 }
 h1{
     display: flex;
     justify-content: center;
     align-items: start;
-    color:rgb(0, 209, 63);
+    color:rgb(1, 20, 6);
     margin-top: 50px;
     
 }
 .contiener div:hover{
-    transform: rotate(380deg);
-    transition: 3s;
+    transform: rotate(360deg);
+    transition: 5s;
     
 }
 
@@ -36,4 +37,22 @@ h1{
     align-items: center;
     
      
+}
+
+li{
+    width: 400px;
+    height: 50px;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    list-style: none;    
+    padding: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
 }

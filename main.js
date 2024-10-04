@@ -102,6 +102,83 @@
 
 // console.log(regEx.exec(name));
 
+//15
 
+// let misol = '2*(3+4)'
 
+// let regEx = /[\(\)\d{1,}]?[*\/\+\](\d)[)]/g;
 
+// console.log(regEx.exec(misol));
+
+////////////////////////Dom da mashq/////////////////////////
+
+// const father = document.querySelector("#ota")
+
+// const btn = document.querySelector("button")
+
+// btn.addEventListener("click",()=>{
+//     father.innerHTML += '<h1>men tugildim</h1>'
+// })
+
+// btn.addEventListener("mouseover",()=>{
+//     console.log("Click bosildi");
+    
+// })
+
+// const items = document.querySelectorAll("h1")
+
+// items.forEach((item)=>{
+//     item.addEventListener("click",(item)=>{
+//         item.target.style.color = 'blue'
+//         item.target.style.opacity = "50%"
+        
+//     })
+// })
+
+// const ul = document.querySelector('ul')
+
+// const button = document.querySelector("button")
+
+// let li = document.createElement('li')
+
+// let li = document.querySelectorAll('li')
+
+// li.forEach((e) => {
+//     e.addEventListener("click",(e) => {
+//         console.log('li bosildi');
+//         e.stopPropagation()    
+//     })
+// })
+
+// ul.addEventListener("click",(e)=>{
+    
+//     if(e.target.nodeName == 'LI'){
+
+//         e.target.remove()
+//     }
+    
+// })
+ 
+// li.addEventListener("click",()=>{
+
+//     // ul.innerHTML += " <li>Someting</li>"
+//     li.innerText = "birinchi li yaratildi"
+
+//     ul.appendChild(li)    
+// })
+
+const ul = document.querySelector('ul')
+
+// const li = document.querySelector('li')
+
+const btn = document.querySelector('button')
+
+btn.addEventListener('click', ()=>{
+
+    const li = document.createElement('li')
+
+    li.textContent = "Chelsi"
+
+    ul.appendChild(li)
+
+})
