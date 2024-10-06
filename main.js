@@ -16,23 +16,23 @@
 
 ////// ////////////////////////1-Topshiriq
 
-// const firstbox = document.querySelector("#first");
-// const secondbox = document.querySelector("#second");
-// const thirdbox = document.querySelector("#third");
+const firstbox = document.querySelector("#first");
+const secondbox = document.querySelector("#second");
+const thirdbox = document.querySelector("#third");
 
 
-// document.addEventListener("keydown",(eV)=>{
-//     console.log(eV);
+document.addEventListener("keydown",(eV)=>{
+    console.log(eV);
     
 
-//     firstbox.innerHTML = eV.code;
-//     secondbox.innerHTML = eV.key;
-//     thirdbox.innerHTML = eV.keyCode;
+    firstbox.innerHTML = eV.code;
+    secondbox.innerHTML = eV.key;
+    thirdbox.innerHTML = eV.keyCode;
  
-//     if(eV.key === " "){
-//          secondbox.innerHTML = "space"
-//     }
-// })
+    if(eV.key === " "){
+         secondbox.innerHTML = "space"
+    }
+})
 
 
 
@@ -167,18 +167,54 @@
 //     ul.appendChild(li)    
 // })
 
-const ul = document.querySelector('ul')
+// const ul = document.querySelector('ul')
 
-// const li = document.querySelector('li')
+// // const li = document.querySelector('li')
 
-const btn = document.querySelector('button')
+// const btn = document.querySelector('button')
 
-btn.addEventListener('click', ()=>{
+// btn.addEventListener('click', ()=>{
 
-    const li = document.createElement('li')
+//     const li = document.createElement('li')
 
-    li.textContent = "Chelsi"
+//     li.textContent = "Chelsi"
 
-    ul.appendChild(li)
+//     ul.appendChild(li)
 
+// })
+    // Regex orqali aniqlash regex-1 qism
+
+const form = document.querySelector('#form')
+
+const input = document.querySelector('input')
+
+const messege = document.querySelector('#messege')
+
+const regEx = /^[a-z]{6,12}$/;
+
+form.addEventListener("submit",(e)=>{
+    e.preventDefault()
+    // console.log("hello");
+    // console.log(input.value);
+    const inputVal = form.input.value
+
+    if(regEx.test(inputVal)){
+        console.log((messege.textContent = "Ma'lumot togri"));
+        
+    }else{
+        console.log(
+          (messege.textContent =
+            "Kichik harflar va Katta harflar sonlar ham ishtirok etishi kerak")
+        );
+        
+    }
 })
+    // live orqali aniqlash regex-2 qism
+
+    form.input.addEventListener("keyup",(e)=>{
+        if(regEx.test(e.target.value)){
+            form.input.setAttribute('class','togri')
+        }else{
+            form.input.setAttribute('class','error')
+        }        
+    })

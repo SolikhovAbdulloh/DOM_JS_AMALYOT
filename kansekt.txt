@@ -1,11 +1,20 @@
-//inline event bu - tag oziga inline tarzida bajariladi ,lekin kamroq moslashuvchan 
+1.inline event bu - tag oziga inline tarzida bajariladi ,lekin kamroq moslashuvchan 
 
-// <button.onclick="alert('start bosildi')">Start<\button>
+ <button.onclick="alert('start bosildi')">Start<\button>
 
-//Dom xususiyati orqali : Faqat bitta event handler ulash mumkin.
+2.Dom xususiyati orqali : Faqat bitta event handler ulash mumkin.
 
 // selector.onclick = fuction(){} anonim fuction orqali qilsak boladi 
 
-//addEventListener Eng zamonaviy va moslashuvchan  usul bolib, bir nechta hodisa qayta ishlovchilar biriktirish imkonini beradi 
+3.addEventListener Eng zamonaviy va moslashuvchan  usul bolib, bir nechta hodisa qayta ishlovchilar biriktirish imkonini beradi 
 
-//selector.addEventListener.("click ..keypress va ..hokazo",fuction(){}) qoshamiz 
+//selector.addEventListener.("click ..keypress va ..hokazo",fuction(){}) qoshamiz
+
+
+4.innerHTML va textContent farqlari
+
+textContent - bu biror bir tegdagi textni o'zgartirish yoki uning yoniga '+' orqali text yozish mumkin.
+
+innerHTML - bu huddi textContent singari text qoshib ozgartira oladi lekn innerHTML <teg> larni oqi oladi.
+
+
